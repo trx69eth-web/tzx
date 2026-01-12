@@ -7,6 +7,7 @@ local function a()
 	end
 	return false
 end
+local reason = nil
 while task.wait() do
 	pcall(function()
 		if a() then
