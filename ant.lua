@@ -1,4 +1,4 @@
-local function ByAntikick()
+local function a()
 	local success, err = pcall(function()
 		local f = game:GetService("Players").LocalPlayer.Kick
 	end)
@@ -9,7 +9,7 @@ local function ByAntikick()
 end
 while task.wait() do
 	pcall(function()
-		if ByAntikick() then
+		if a() then
 			local old_getnc = hookfunction(getnamecallmethod, function()
 				return "FakeKick"
 			end)
